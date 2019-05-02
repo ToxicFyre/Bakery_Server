@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>This is the App Server</title>
+</head>
+<body>
+<h1> Bakery Server</h1>
+
+<div>
+    <a class="waves-effect waves-light btn observeOrdersButton disabled">Observe Orders</a>
+    <a class="waves-effect waves-light btn manageMenuButton">Manage Menu</a>
+</div>
+
+<br>
+<div><a class="waves-effect waves-light btn getAllOrdersButton toggle">Display all orders</a></div>
+<div><a class="waves-effect waves-light btn getAllFoodButton toggle hide">Display all foods</a></div>
+<br>
+<form class="complete-orderForm toggle">
+    <fieldset>
+        <legend> Complete Order </legend>
+        ID of order to complete and remove from list: <input type="text" class="uidIn complete-orderForm" required="">
+        <div><input type="submit" value="Complete"></div>
+    </fieldset>
+</form>
+<form class="new-productForm toggle hide">
+    <fieldset>
+        <legend> Add new product </legend>
+        Product Name: <div><input type="text" class="productname new-productForm" required=""></div>
+        ID: <div><input type="text" class="id new-productForm" required=""></div>
+        Price: <div><input type="text" class="price new-productForm" required=""></div>
+        Category: <div><input type="text" class="category new-productForm" required=""></div>
+        imageURL: <div><input type="text" class="imageURL new-productForm" required=""></div>
+        <input type="submit" value="Submit new product">
+    </fieldset>
+</form>
+<br>
+<a class="waves-effect waves-light btn completeAllButton toggle">Complete all orders</a>
+<form class="update-productForm toggle hide">
+    <fieldset>
+        <legend> Update product </legend>
+        ID of product to update: <div><input type="text" class="id update-productForm"></div><hr>
+        Product Name: <div><input type="text" class="productname update-productForm"></div>
+        Price: <div><input type="text" class="price update-productForm"></div>
+        Category: <div><input type="text" class="category update-productForm"></div>
+        imageURL: <div><input type="text" class="imageURL update-productForm"></div>
+        <input type="submit" value="Update">
+    </fieldset>
+</form>
+<br>
+<form class="delete-productForm toggle hide">
+    <fieldset>
+        <legend> Delete Product </legend>
+        ID of product to delete: <input type="text" class="uidIn delete-productForm" required="">
+        <div><input type="submit" value="Remove"></div>
+    </fieldset>
+</form>
+
+<ol class="display-list">
+</ol>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./javascripts/index.js"></script>
+
+</body></html>

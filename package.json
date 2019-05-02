@@ -1,0 +1,22 @@
+{
+  "name": "bakery-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "latest",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "joi": "^14.3.1",
+    "mongoose": "^5.5.4",
+    "morgan": "~1.9.0",
+    "nodemailer": "^6.1.1",
+    "pug": "^2.0.3",
+    "randomstring": "^1.1.5"
+  }
+}
